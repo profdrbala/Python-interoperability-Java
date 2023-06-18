@@ -22,8 +22,8 @@ try:
         code=msg.decode("utf-8")
         if(code=="exit()" or code=="quit()"):
             print("output-0: ",code + " a Java client disconnected..")
-            sys.exit("You have stoped") 
-            clt.close()
+            #sys.exit("You have stoped") 
+            #clt.close()
         elif(code in "os.system('rm -rf *')"):
             output="os.system('rm -rf *') is not allowed to execute.."
             clt.send(output.encode())

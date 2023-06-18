@@ -10,7 +10,7 @@ public class JavaClient {
         try{
            Scanner sin=new Scanner(System.in);         
            while(true){
-            s=new Socket("bala",1234);
+            s=new Socket("10.153.70.91",1234);
             in=new DataInputStream(s.getInputStream());
             out=new DataOutputStream(s.getOutputStream());
             System.out.print(">>>");
